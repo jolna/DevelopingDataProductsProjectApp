@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is a presentation pitch for the Shiny app for Data product                  project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="This is a presentation pitch for the Shiny app for Data product                  project">
+  <meta name="author" content="Ram Narayanan (18th June 2017)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>This is a presentation pitch for the Shiny app for Data product                  project</h1>
+    <h2>Training Sampling APP</h2>
+    <p>Ram Narayanan (18th June 2017)<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Training sampling App Description</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>The main function of the traning sampling app is to determine the best percentage to sample for building a model.<br></li>
+<li>This app uses, R&#39;s Boston dataset. Which has median home values and other 
+features from 1978</li>
+<li>This app generates a simple linear model from a trainset determined by the percentage in the slider. It uses
+the generated model to predict the &quot;Median value of owner occupied homes&quot; on the remaining holdout or testset data.
+The prediction is then presented visually with a plot between the &quot;Actual&#39; median value in the testset and the
+model predicted &quot;Modeled&quot; value for the testset.
+A R-Squared value is also presented to show the quality of the fit, whose value range from 0 to 1. Higher R Squared
+usually represents a better fit. We use this and the fit of the chart to determine the sampling percentage.</li>
+<li>The percentage determined could then be used to do other detailed analysis and modeling using advance machine learning algorithms.<br></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Results of sampling with 75% training data</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>## [1] &quot;Test R Squared: 0.742628367165728&quot;
+</code></pre>
+
+<p><img src="assets/fig/boston75-1.png" alt="plot of chunk boston75"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Results of sampling with 65% training data</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>## [1] &quot;Test R Squared: 0.741000486277999&quot;
+</code></pre>
+
+<p><img src="assets/fig/boston65-1.png" alt="plot of chunk boston65"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Based on the R-Squared value from the sampling with a simple linear
+model this app helps in deciding the appropriate training set.</p>
+
+<p>Thank You</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Training sampling App Description'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Results of sampling with 75% training data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Results of sampling with 65% training data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
